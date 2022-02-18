@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pushapi</title>
+    
+    <!-- usando produtos do firebase -->
+    <script type = "module">
+    import { User } from "./js/model/User.js";
+    
+    let userKaique = new User("Kaique");
+    let nomeDoUserKaique = userKaique.nome;
+    let asdfasdf="asdf";
+    </script>
+  </head>
+  <body>
+    <h1>API de Notificacao</h1><br></br>
+ 
+    <div class="widget_usuario_logado">
+      <span>Usuario Logado : </span>
+      <span id="usuarioLogado">nenhum usuario logado</span><br></br>
+      <button id="btnLogout">Sair</button><br></br>
+    </div>
+ 
+    <br></br>
+ 
+    <label for="user_name">Nome do usuario:</label><br>
+    <input type="text" id="user_name" value=""></input><br></br>
+    
+    <label for="user_email">Email do usuario:</label><br>
+    <input type="text" id="user_email" value=""></input><br></br>
+ 
+    <label for="user_password">Senha:</label><br>
+    <input type="password" id="user_password" value="123456789"></input><br></br>
+ 
+    <label for="sim_praReceberMsgs">Desejo receber mensagens de estudo</label>
+    <input type="radio" id="sim_praReceberMsgs"></input><br></br>
+ 
+    <button type="button" id="btnLogin">Login</button>
+    <button type="button" id="btnRegister">Registrar-se</button><br></br>
+    </body>
+</html>
